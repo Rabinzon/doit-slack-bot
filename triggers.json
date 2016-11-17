@@ -1,0 +1,20 @@
+[
+  {
+    "w": "хочу",
+    "a": ["So just do it"]
+  },
+  {
+    "w": "не могу",
+    "a": [
+      "Yes you can",
+      "Nothing is impossible"
+    ]
+  },
+  {
+    "w": "мечтаю",
+    "a":  [
+      "Don't let your dreams be dreams",
+      "Make your dreams come true"
+    ]
+  }
+]
