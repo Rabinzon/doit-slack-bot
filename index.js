@@ -36,6 +36,6 @@ bot.on('message', (message) => {
 	if (check(message)) {
 	    if (message.text === '$') return sendRates(message);
 		const result = getAnswer(getTrigger(message)).a;
-		if (result) bot.postMessage(message.channel, result), params);
+		if (result) bot.postMessage(message.channel, result, params);
 	}
 });
