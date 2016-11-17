@@ -2,7 +2,6 @@ const Bot = require('slackbots');
 const config = require('./.config.json');
 const triggers = require('./triggers.json');
 const fetch = require('isomorphic-fetch');
-
 const bot = new Bot(config);
 
 const params = {
