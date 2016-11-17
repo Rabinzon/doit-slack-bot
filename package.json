@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "nodemon": "^1.11.0",
     "slackbots": "^0.5.2"
   }
