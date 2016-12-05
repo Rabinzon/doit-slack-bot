@@ -19,7 +19,7 @@ Example:
   "token": "asx-345asdasd-SSDdfswrERFCdfjnsd"
 }
 ```
-after that:
+After that:
 
 ```
 $ npm start
