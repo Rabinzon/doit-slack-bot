@@ -1,7 +1,6 @@
 const Bot = require('slackbots');
 const config = require('./.config.json');
 const triggers = require('./triggers.json');
-const fetch = require('isomorphic-fetch');
 const bot = new Bot(config);
 
 const params = {
@@ -20,21 +19,10 @@ const getAnswer = (answers) => {
 	return answers[index];
 };
 
-const sendRates = (message) => {
-	fetch('http://api.fixer.io/latest')
-		.then(res => res.json())
-		.then(res => {
-			const rub = res.rates.RUB.toFixed(2);
-			const usd = (rub / res.rates.USD).toFixed(2);
-			const result = `:heavy_dollar_sign:   USD: ${usd},  EUR: ${rub}`;
-			bot.postMessage(message.channel, result, params);
-		})
-};
-
 bot.on('message', (message) => {
 	if (check(message)) {
-	    if (message.text === '$') return sendRates(message);
-		const result = getAnswer(getTrigger(message)).a;
+		const result = getAnswer(getTrigger(message).a);
 		if (result) bot.postMessage(message.channel, result, params);
 	}
 });
+
