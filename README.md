@@ -24,3 +24,10 @@ after that:
 ```
 $ npm start
 ```
+
+Also you can turn up a bot in docker container, with docker-compose.
+
+```
+$ docker-compose up -d
+```
+
