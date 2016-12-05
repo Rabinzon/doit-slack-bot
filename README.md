@@ -25,7 +25,7 @@ after that:
 $ npm start
 ```
 
-Also you can turn up a bot in docker container, with docker-compose.
+Also you can turn up a bot in docker container, with docker-compose. In this case, you need only creat `.config.json`, without `npm i` and `npm start`.
 
 ```
 $ docker-compose up -d
